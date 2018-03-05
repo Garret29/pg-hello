@@ -20,3 +20,8 @@ function deviceInfo() {
 	navigator.notification.alert(info);
 	
 }
+
+function personData() {
+	info = "Szymon Piotrowski" + "\n" + "uek" + "\n" + "krakow"
+	navigator.notification.alert(info);
+}
