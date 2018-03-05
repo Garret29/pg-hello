@@ -25,3 +25,9 @@ function personData() {
 	info = "Szymon Piotrowski" + "\n" + "uek" + "\n" + "krakow"
 	navigator.notification.alert(info);
 }
+
+function motionData(){
+	navigator.accelerometer.getCurrentAcceleration(function(acceleration){
+		alert("x ="+acceleration.x + " y ="+acceleration.y+" z="+acceleration.z+" time="+acceleration.timestamp)
+	};
+}
