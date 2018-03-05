@@ -28,6 +28,6 @@ function personData() {
 
 function motionData(){
 	navigator.accelerometer.getCurrentAcceleration(function(acceleration){
-		alert("x ="+acceleration.x + " y ="+acceleration.y+" z="+acceleration.z+" time="+acceleration.timestamp)
+		navigator.notification.alert("x ="+acceleration.x + " y ="+acceleration.y+" z="+acceleration.z+" time="+acceleration.timestamp)
 	};
 }
